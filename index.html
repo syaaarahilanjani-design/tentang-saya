@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Disya Rahil Anjani</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #fdf2f8;
+      color: #831843;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .header {
+      margin-bottom: 32px;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #9d174d;
+    }
+    .header p {
+      color: #be185d;
+      font-size: 1.1rem;
+      margin-top: 8px;
+    }
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .card {
+      background-color: #fce7f3;
+      border: 1px solid #fbcfe8;
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #f472b6;
+    }
+    .col-span-2 { grid-column: span 2; }
+    .col-span-1 { grid-column: span 1; }
+
+    .card h2 {
+      font-size: 1.25rem;
+      color: #db2777;
+      margin-bottom: 12px;
+    }
+    .card p {
+      color: #9d174d;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .tag {
+      background-color: #fbcfe8;
+      color: #831843;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .project-item {
+      margin-bottom: 16px;
+    }
+    .project-item:last-child {
+      margin-bottom: 0;
+    }
+    .project-title {
+      font-weight: 600;
+      color: #9d174d;
+    }
+    .project-desc {
+      font-size: 0.85rem;
+      color: #be185d;
+    }
+
+    @media (max-width: 768px) {
+      .bento-grid {
+        grid-template-columns: 1fr;
+      }
+      .col-span-2, .col-span-1 {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Halo, Saya Disya Rahil Anjani 👋</h1>
+      <p>UI/UX Designer & Content Creator</p>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Tentang Saya -->
+      <div class="card col-span-2">
+        <h2>Tentang Saya</h2>
+        <p>Saya gemar membaca dan menggunakan makeup. Lewat hobi ini, saya banyak belajar tentang kreativitas, ketelitian, dan cara mengekspresikan diri yang kemudian saya terapkan dalam setiap karya desain saya.</p>
+      </div>
+
+      <!-- Minat & Hobi -->
+      <div class="card col-span-1">
+        <h2>Minat</h2>
+        <div class="tag-container">
+          <span class="tag">Membaca</span>
+          <span class="tag">Makeup Art</span>
+          <span class="tag">Beauty Trend</span>
+          <span class="tag">Visual Design</span>
+        </div>
+      </div>
+
+      <!-- Keahlian -->
+      <div class="card col-span-1">
+        <h2>Keahlian</h2>
+        <div class="tag-container">
+          <span class="tag">masak</span>
+          <span class="tag">belajar fisika</span>
+          <span class="tag">bernyanyi</span>
+          <span class="tag">makeup</span>
+        </div>
+      </div>
+
+      <!-- Proyek Pilihan -->
+      <div class="card col-span-2">
+        <h2>Proyek Pilihan</h2>
+        <div class="project-item">
+          <div class="project-title">Desain Web Beauty & Lifestyle</div>
+          <div class="project-desc">Merancang antarmuka blog kecantikan yang bersih, feminin, dan nyaman dibaca.</div>
+        </div>
+        <div class="project-item">
+          <div class="project-title">Aplikasi Katalog Buku Digital</div>
+          <div class="project-desc">Membuat konsep UI untuk aplikasi pencatatan dan ulasan buku favorit.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
